@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<meta charset="utf-8">
+<head>
+    <title>补考查询</title>
+</head>
+<body>
+    <h1>补考查询</h1>
+    <form action="makeup_exam.php" method="POST">
+        <label for="class_id">班级ID：</label>
+        <input type="text" name="class_id" id="class_id"><br><br>
+        
+        <label for="course_id">课程ID：</label>
+        <input type="text" name="course_id" id="course_id"><br><br>
+        
+        <input type="submit" value="查询">
+    </form>
+
+
+    <h1>学生补考名单查询</h1>
+    <form action="student_makeup_exam.php" method="POST">
+        <label for="student_id">学生ID：</label>
+        <input type="text" name="student_id" id="student_id"><br><br>
+        
+        <input type="submit" value="查询">
+    </form>
+</body>
+</html>

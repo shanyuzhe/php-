@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>学生选课系统 - 成绩查询</title>
+</head>
+<body>
+    <h1>学生选课系统</h1>
+    
+    <h2>成绩查询(个人各科成绩查询)</h2>
+
+    <form action="view_grades.php" method="POST">
+        <label for="student_id">学生ID:</label>
+        <input type="text" name="student_id" id="student_id"><br><br>
+        
+        <input type="submit" value="查询">
+    </form>
+    
+    <h2>成绩查询(班级各科成绩查询)</h2>
+    <form action="view_grades.php" method="POST">
+        <label for="class_id">班级ID:</label>
+        <input type="text" name="class_id" id="class_id"><br><br>
+        
+        <label for="course_id">课程ID:</label>
+        <input type="text" name="course_id" id="course_id"><br><br>
+        
+        <input type="submit" value="查询">
+    </form>
+
+    <h2>成绩查询(指定同学 指定课程查询)</h2>
+    <form action="grade_query.php" method="POST">
+        <label for="student_id">学生ID：</label>
+        <input type="text" name="student_id" id="student_id" required><br><br>
+        
+        <label for="course_id">课程ID：</label>
+        <input type="text" name="course_id" id="course_id" required><br><br>
+        
+        <input type="submit" value="查询">
+    </form>
+</body>
+</html>

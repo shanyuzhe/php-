@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>课程表基本信息管理</title>
+    <style>
+        /* 在这里添加你的CSS样式 */
+    </style>
+</head>
+<body>
+    <h1>课程表基本信息管理</h1>
+    
+    <!-- 添加课程信息的表单 -->
+    <form action="add_course.php" method="post">
+        <label for="course_id">课程编号：</label><br>
+        <input type="text" id="course_id" name="course_id"><br>
+        <label for="course_name">课程名称：</label><br>
+        <input type="text" id="course_name" name="course_name"><br>
+        <label for="editor">主编：</label><br>
+        <input type="text" id="editor" name="editor"><br>
+        <label for="publisher">出版社：</label><br>
+        <input type="text" id="publisher" name="publisher"><br>
+        <label for="credits">学分：</label><br>
+        <input type="text" id="credits" name="credits"><br>
+        <input type="submit" value="添加课程">
+    </form>
+    <br>
+    <!-- 删除课程信息的表单 -->
+    <form action="delete_course.php" method="post">
+        <label for="delete_course_id">要删除的课程编号：</label><br>
+        <input type="text" id="delete_course_id" name="delete_course_id"><br>
+        <input type="submit" value="删除课程">
+    </form>
+    <br>
+
+    <!--修改课程信息表单-->
+    <form action="update_course.php" method="post">
+        <label for="update_course_id">要修改的课程编号：</label><br>
+        <input type="text" id="update_course_id" name="update_course_id"><br>
+        <label for="update_course_name">课程名称：</label><br>
+        <input type="text" id="update_course_name" name="update_course_name"><br>
+        <label for="update_editor">主编：</label><br>
+        <input type="text" id="update_editor" name="update_editor"><br>
+        <label for="update_publisher">出版社：</label><br>
+        <input type="text" id="update_publisher" name="update_publisher"><br>
+        <label for="update_credits">学分：</label><br>
+        <input type="text" id="update_credits" name="update_credits"><br>
+        <input type="submit" value="修改课程">
+    </form>
+
+</body>
+</html>
